@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foovio | Eat Smarter. Spend Better.</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fbfaf5;
+      color: #17231d;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: white;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: bold;
+      color: #176b4b;
+    }
+
+    nav a {
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #176b4b;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #104c35;
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 80px 8%;
+    }
+
+    .hero-content {
+      max-width: 550px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    .green {
+      color: #176b4b;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #637168;
+      margin-bottom: 25px;
+    }
+
+    .hero-image {
+      background: #e9f2e8;
+      border-radius: 25px;
+      padding: 35px;
+      font-size: 75px;
+      text-align: center;
+      min-width: 280px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #176b4b;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px #00000008;
+    }
+
+    .card .icon {
+      font-size: 35px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      color: #637168;
+    }
+
+    .how {
+      background: #e9f2e8;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .step {
+      padding: 20px;
+    }
+
+    .step span {
+      color: #176b4b;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+      background: #176b4b;
+      color: white;
+      border-radius: 25px;
+      margin: 50px 8%;
+      padding: 55px 25px;
+    }
+
+    .contact h2 {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      margin-bottom: 22px;
+    }
+
+    .contact .btn {
+      background: white;
+      color: #176b4b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #142c20;
+      color: white;
+    }
+
+    footer a {
+      color: #bde5c7;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .features,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">🥗 Foovio</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+      <h1>
+        Eat Smarter.<br>
+        <span class="green">Spend Better.</span>
+      </h1>
+
+      <p>
+        Foovio helps college students make smarter food
+        choices based on their budget, dietary preferences,
+        available meals and fitness goals.
+      </p>
+
+      <a class="btn"
+         href="mailto:amanshaikh20067@gmail.com?subject=Foovio%20Early%20Access">
+        Get Started →
+      </a>
+    </div>
+
+    <div class="hero-image">
+      🥗 🍎 🥑
+      <h3>Healthy Food, Smart Choices</h3>
+    </div>
+
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+
+    <div class="section-title">
+      <h2>Why Choose Foovio?</h2>
+      <p>Smart nutrition designed for student life.</p>
+    </div>
+
+    <div class="features">
+
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Budget-Friendly Meals</h3>
+        <p>
+          Find meal options that match your budget
+          without ignoring your nutrition goals.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Personalized Nutrition</h3>
+        <p>
+          Get meal suggestions based on goals like
+          muscle gain, weight management and balanced eating.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h3>AI Food Analysis</h3>
+        <p>
+          Explore food image analysis and nutritional
+          estimates to better understand your meals.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🥗</div>
+        <h3>Dietary Preferences</h3>
+        <p>
+          Consider vegetarian, eggetarian and
+          non-vegetarian food preferences.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Nutrition Insights</h3>
+        <p>
+          Understand estimated calories, protein,
+          carbohydrates and fats.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🍽️</div>
+        <h3>Meal Recommendations</h3>
+        <p>
+          Compare available food options and
+          make more informed everyday decisions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how" id="how">
+
+    <div class="section-title">
+      <h2>How Foovio Works</h2>
+      <p>Three simple steps towards smarter food decisions.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <span>STEP 01</span>
+        <h3>Set Your Preferences</h3>
+        <p>
+          Enter your budget, dietary preferences
+          and fitness goals.
+        </p>
+      </div>
+
+      <div class="step">
+        <span>STEP 02</span>
+        <h3>Explore Your Options</h3>
+        <p>
+          Discover meal ideas and compare their
+          estimated nutritional values and prices.
+        </p>
+      </div>
+
+      <div class="step">
+        <span>STEP 03</span>
+        <h3>Make Smarter Choices</h3>
+        <p>
+          Choose meals that better match your
+          personal needs and daily budget.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+
+    <h2>Ready to Eat Smarter?</h2>
+
+    <p>
+      Join us in making affordable and informed
+      food choices a part of everyday student life.
+    </p>
+
+    <a class="btn"
+       href="mailto:amanshaikh20067@gmail.com?subject=Interested%20in%20Foovio">
+      Contact Us →
+    </a>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>🥗 Foovio</h2>
+    <p>Eat smarter. Spend better.</p>
+
+    <p>
+      Contact:
+      <a href="mailto:amanshaikh20067@gmail.com">
+        amanshaikh20067@gmail.com
+      </a>
+    </p>
+
+    <p>© 2026 Foovio. All Rights Reserved.</p>
+    <p>Illustrative nutrition information is not medical advice.</p>
+  </footer>
+
+</body>
+</html>
